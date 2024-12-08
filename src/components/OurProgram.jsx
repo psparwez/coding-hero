@@ -36,7 +36,10 @@ const ourProgramData = [
 
 const OurProgram = () => {
   return (
-    <section id="our-program " className="px-10 py-20 m-0 bg-gray-950/30">
+    <section
+      id="our-program "
+      className="px-4 py-20 m-0 md:px-10 bg-gray-950/30"
+    >
       <motion.div
         variants={SectionVariants}
         initial="hidden"
@@ -59,21 +62,25 @@ const OurProgram = () => {
               key={item.id}
             >
               <div className="flex items-start justify-between gap-2">
-                <div className="">
-                  <div className="flex items-center gap-3 mb-2 text-white">
-                    <span className="text-2xl text-primaryColor">
-                      {item.icon}
-                    </span>
-                    <h3 className="text-lg font-bold font-Sync ">
-                      {item.title}
-                    </h3>
-                  </div>
-                  <p className="text-gray-400 ">{item.description}</p>
-                </div>
+                <div className="w-full">
+                  <div className="flex items-start justify-between w-full">
+                    <div className="flex flex-wrap items-center gap-3 mb-2 text-white">
+                      <span className="text-2xl text-primaryColor">
+                        {item.icon}
+                      </span>
+                      <h3 className="text-lg font-bold font-Sync ">
+                        {item.title}
+                      </h3>
+                    </div>
 
-                <button className="px-3 py-1 text-sm text-white rounded-md shadow-lg bg-gradient-to-tr from-primaryColor to-primaryColor/60 ">
-                  Free
-                </button>
+                    <button className="px-3 py-1 text-sm text-white rounded-md shadow-lg bg-gradient-to-tr from-primaryColor to-primaryColor/60 justify-self-end ">
+                      Free
+                    </button>
+                  </div>
+                  <p className="mt-4 text-gray-400 sm:mt-0">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -81,17 +88,17 @@ const OurProgram = () => {
 
         {/* cta  */}
         <div className="w-full py-5 mt-20 text-center">
-          <h2 className="mb-4 text-4xl font-bold text-transparent bg-gradient-to-r via-white bg-clip-text from-white to-gray-800 font-Sync">
+          <h2 className="mb-4 text-2xl font-bold text-transparent sm:text-3xl md:text-4xl bg-gradient-to-r via-white bg-clip-text from-white to-gray-800 font-Sync">
             Ready to become a Coding Hero?
           </h2>
-          <p className="w-[80%] mx-auto text-gray-400">
+          <p className="w-full text-sm sm:text-base sm:w-[80%] mx-auto text-gray-400">
             Join thousands of students from across India and start your coding
             journey today!
           </p>
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "#c85d00" }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-2 mt-6 font-bold text-white rounded-full bg-primaryColor"
+            className="px-6 py-2 mt-6 text-base font-bold text-white rounded-full sm:px-8 bg-primaryColor"
           >
             Sign Up Now
           </motion.button>

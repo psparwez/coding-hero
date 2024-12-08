@@ -61,7 +61,7 @@ const benefitsData = [
 
 const Benefits = () => {
   return (
-    <section className="relative px-10 py-20 overflow-hidden bg-gradient-to-tr from-gray-950/30 via-gray-950/40 to-gray-900/10">
+    <section className="relative px-4 py-20 overflow-hidden md:px-10 bg-gradient-to-tr from-gray-950/30 via-gray-950/40 to-gray-900/10">
       <motion.div
         variants={SectionVariants}
         initial="hidden"
@@ -71,14 +71,14 @@ const Benefits = () => {
       >
         <div className="text-center">
           <p className="select-none conicGradient ">
-            <span className="relative z-20 shadow-sm font-Sync">
+            <span className="relative z-20 text-sm shadow-sm font-Sync sm:text-base">
               Become a Coding Hero
             </span>
           </p>
-          <h2 className="mb-4 text-4xl font-bold text-transparent from-pink-600 font-Sync bg-gradient-to-r via-yellow-500 to-orange-600 bg-clip-text">
+          <h2 className="mb-4 text-3xl font-bold text-transparent sm:text-4xl from-pink-600 font-Sync bg-gradient-to-r via-yellow-500 to-orange-600 bg-clip-text">
             Super power of Coding heros
           </h2>
-          <p className="text-gray-400 ">
+          <p className="text-sm text-gray-400 sm:text-base">
             Join the Coding Hero program and unlock a world of opportunities.
             Open to all college students across India.
           </p>
@@ -93,10 +93,10 @@ const Benefits = () => {
               className="p-8 shadow-xl bg-gradient-to-bl rounded-xl from-gray-900 ring-1 ring-gray-800/70 to-gray-950/10 backdrop-blur-2xl "
               key={benefit.id}
             >
-              <div className="">
-                <div className="flex items-center gap-4 mb-2">
+              <div>
+                <div className="flex flex-wrap items-center gap-4 mb-2">
                   {benefit.icon}
-                  <h3 className="text-xl font-semibold text-blue-50 font-Sync ">
+                  <h3 className="text-lg font-semibold sm:text-xl text-blue-50 font-Sync ">
                     {benefit.title}
                   </h3>
                 </div>
@@ -115,7 +115,7 @@ const Benefits = () => {
             backgroundPosition: "right center",
             transition: { duration: 0.3 },
           }}
-          className="flex items-center gap-1 px-6 py-2.5 font-medium mx-auto text-lg text-center text-white rounded-full min-w-max mt-14 bg-gradient-to-r from-orange-500 to-pink-500 bg-[length:200%_100%] hover:from-orange-600 hover:to-pink-600 transition-all duration-500"
+          className="flex items-center gap-1 px-6 py-2 sm:py-2.5 font-medium mx-auto text-lg text-center text-white rounded-full min-w-max mt-14 bg-gradient-to-r from-orange-500 to-pink-500 bg-[length:200%_100%] hover:from-orange-600 hover:to-pink-600 transition-all duration-500"
         >
           Join Now
           <MdOutlineChevronRight size={24} />

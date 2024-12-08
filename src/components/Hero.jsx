@@ -69,10 +69,20 @@ const Hero = () => {
   return (
     <section id="home" className="relative z-10">
       <div className="pt-14 ">
-        <div className="container relative z-20 mx-auto overflow-hidden py-36 ">
+        <div className="container relative z-20 px-4 mx-auto overflow-hidden py-36 sm:px-0">
           <div className="text-center">
             {/* Animated Text Box */}
-            <motion.p className="inline-flex items-center gap-2 px-3 py-2 mb-2 text-xs rounded-full select-none bg-primaryColor/5 text-primaryColor ring-1 ring-primaryColor/10">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                duration: 1.5,
+                type: "spring",
+                damping: 10,
+                stiffness: 300,
+              }}
+              className="inline-flex items-center gap-2 px-3 py-2 mb-2 text-xs rounded-full select-none bg-primaryColor/5 text-primaryColor ring-1 ring-primaryColor/10"
+            >
               {/* Animated Pulse Icon */}
               <span className="inline-block relative before:content-[''] before:absolute before:h-4 before:w-4 before:bg-primaryColor/20 before:-translate-y-1/2 before:-translate-x-1/2 before:top-1/2 before:left-1/2 before:rounded-full before:animate-pulse animate-pulse w-2 h-2 rounded-full bg-primaryColor/70" />
               Empower Your Journey to Coding Excellence!
@@ -80,9 +90,9 @@ const Hero = () => {
 
             {/* Main Heading Animation */}
             <motion.h1
-              {...fadeInUp} // Apply fade-in animation
-              transition={{ ...fadeInUp.whileInView.transition, delay: 0.5 }} // Customize delay for h1
-              className="text-7xl text-yellow-50 font-Sync leading-[1.2] font-bold mb-4"
+              {...fadeInUp}
+              transition={{ ...fadeInUp.whileInView.transition }}
+              className="text-[26px] lg:text-7xl text-yellow-50 font-Sync leading-[1.2] font-bold mb-4"
             >
               Become a Coding Hero,
               <br />
@@ -93,17 +103,17 @@ const Hero = () => {
 
             {/* Hero Description Text */}
             <motion.p
-              {...fadeInUp} // Apply fade-in animation
-              transition={{ ...fadeInUp.whileInView.transition, delay: 1.0 }} // Customize delay for description
-              className="max-w-[70%] font-Urbanist mb-10 text-lg text-gray-400 mx-auto"
+              {...fadeInUp}
+              transition={{ ...fadeInUp.whileInView.transition, delay: 1.0 }}
+              className="w-full md:max-w-[70%] font-Urbanist mb-10 text-base sm:text-lg text-gray-400 mx-auto"
             >
               {heroDescription}
             </motion.p>
 
             {/* Monthly Prizes Text */}
             <motion.p
-              {...fadeInUp} // Apply fade-in animation
-              transition={{ ...fadeInUp.whileInView.transition, delay: 1.5 }} // Customize delay for prize text
+              {...fadeInUp}
+              transition={{ ...fadeInUp.whileInView.transition, delay: 1.5 }}
               className="flex items-center justify-center gap-2 my-3 mb-10 text-base text-yellow-50"
             >
               <img className="h-5" src={MedalImage} alt="Golden Medal Icon" />
@@ -119,20 +129,20 @@ const Hero = () => {
               }}
               whileTap={{ scale: 0.95 }}
               {...fadeInUp}
-              className="px-8 py-[10px] font-Urbanist text-lg rounded-full bg-primaryColor text-yellow-50 font-medium"
+              className="px-8 py-[10px] font-Urbanist text-base font-bold sm:text-lg rounded-full bg-primaryColor text-yellow-50 sm:font-medium"
             >
               Sign Up Now
             </motion.button>
           </div>
           {/* graph  */}
 
-          <div className="absolute  bottom-0 left-auto -z-20 h-[800px]   right-0">
+          <div className="absolute  bottom-0 left-auto -z-20 h-[750px]   right-0">
             <AnimatedSVG />
           </div>
           {/* bottom gradient background that cover graph   */}
           <div className="absolute bottom-0 w-full -z-10 h-80 bottomImage"></div>
           {/* Icons  */}
-          <div className="opacity-20">
+          <div className=" opacity-20">
             {iconsData.map((icon) => (
               <motion.div
                 key={icon.id}

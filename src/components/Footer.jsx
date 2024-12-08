@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="px-10 border-t border-gray-800">
       <div className="container py-10 pb-4 mx-auto ">
-        <div className="flex flex-wrap items-center justify-between ">
+        <div className="flex flex-wrap items-start justify-between gap-4 md:items-center ">
           {/* logo  */}
           <div className="flex items-center cursor-pointer gap-2.5  ">
             <div className="h-10 w-10 group bg-[#ff7700] rounded grid place-items-center text-white ">
@@ -34,7 +34,8 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+
+          <div className="flex flex-col items-start gap-3 md:items-center md:flex-row">
             {footerLinks.map((link) => (
               <a
                 key={link.id}
@@ -46,7 +47,7 @@ const Footer = () => {
             ))}
           </div>
           {/* copyright  */}
-          <p className="text-base font-medium text-center text-gray-400 ">
+          <p className="pt-10 text-base font-medium text-center text-gray-400 sm:py-0">
             © 2023 Coding Hero. All rights reserved.
           </p>
         </div>

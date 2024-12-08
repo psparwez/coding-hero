@@ -89,17 +89,17 @@ const Journey = () => {
         viewport={{ once: true }}
         className="container relative z-10 mx-auto"
       >
-        <div className="max-w-[650px] mx-auto mb-5 text-center">
-          <h2 className="mb-3 text-4xl font-bold text-transparent font-Sync bg-gradient-to-r from-gray-200 bg-clip-text to-gray-500">
+        <div className="w-full px-4 md:max-w-[650px] mx-auto mb-5 text-center">
+          <h2 className="mb-3 text-2xl font-bold text-transparent sm:text-3xl md:text-4xl font-Sync bg-gradient-to-r from-gray-200 bg-clip-text to-gray-500">
             Your <span className="text-white"> 7-Step</span> Journey to Becoming
             a Coding Hero
           </h2>
-          <p className="text-lg text-gray-400">
+          <p className="text-base text-gray-400 sm:text-lg ">
             Take the path to becoming a coding leader: apply, host events,
             inspire others, and compete for the top spot each month!
           </p>
         </div>
-        <div className="relative grid w-full grid-cols-1 gap-10 px-10 mt-10 lg:grid-cols-2">
+        <div className="relative grid w-full grid-cols-1 gap-10 px-4 mt-10 md:px-10 lg:grid-cols-2">
           <div className="w-full ml-auto ">
             {stepsData?.slice(0, 4).map((step) => (
               <motion.div
@@ -107,7 +107,7 @@ const Journey = () => {
                 initial="hidden"
                 whileHover="hover"
                 whileTap={{ scale: 0.98 }}
-                className="relative flex items-start gap-5 p-6 mb-4 bg-gray-800 rounded-lg"
+                className="relative flex flex-wrap items-start gap-5 p-6 mb-4 bg-gray-800 rounded-lg sm:flex-nowrap"
                 key={step.id}
               >
                 <div
@@ -115,11 +115,13 @@ const Journey = () => {
                 >
                   {step.icon}
                 </div>
-                <div className="">
+                <div>
                   <h3 className="mb-2 text-xl font-medium text-white font-Sync">
                     {step.title}
                   </h3>
-                  <p className="text-base text-gray-400">{step.description}</p>
+                  <p className="text-base text-gray-400 leading-[25px]">
+                    {step.description}
+                  </p>
                 </div>
                 <p
                   className={`absolute top-6  bg-gray-900/40 ring-1 ring-gray-800 shadow-lg py-[2px] rounded text-white/40 right-6 ring-inset  px-2 text-sm font-Sync`}
@@ -137,7 +139,7 @@ const Journey = () => {
                 initial="hidden"
                 whileHover="hover"
                 whileTap={{ scale: 0.98 }}
-                className="relative flex items-start gap-5 p-6 mb-4 bg-gray-800 rounded-lg"
+                className="relative flex flex-wrap items-start gap-5 p-6 mb-4 bg-gray-800 rounded-lg sm:flex-nowrap"
                 key={step.id}
               >
                 <div
@@ -149,7 +151,9 @@ const Journey = () => {
                   <h3 className="mb-2 text-xl font-medium text-white font-Sync">
                     {step.title}
                   </h3>
-                  <p className="text-base text-gray-400">{step.description}</p>
+                  <p className=" leading-[25px] text-gray-400  text-base">
+                    {step.description}
+                  </p>
                 </div>
                 <p
                   className={`absolute top-6 font-Sync  bg-gray-900/40 ring-1 ring-gray-800 shadow-lg py-[2px] rounded text-white/40 right-6  px-2 text-sm`}

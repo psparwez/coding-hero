@@ -25,7 +25,7 @@ export const fadeInUp = {
       duration: 0.5,
       type: "spring",
       damping: 10,
-      stiffness: 100,
+      stiffness: 200,
     },
   },
   viewport: { once: true },

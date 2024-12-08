@@ -42,7 +42,7 @@ const Goals = () => {
       whileInView="visible"
       viewport={{ once: true }}
       id="our-goals"
-      className="px-10 py-10 "
+      className="px-4 py-10 md:px-10 "
     >
       <div className="container mx-auto">
         <SectionText
@@ -58,7 +58,7 @@ const Goals = () => {
               whileHover="hover"
               whileTap={{ scale: 0.98 }}
               key={goal.id}
-              className={`${goal.backgroundColor} flex flex-col p-8 rounded-lg shadow-lg`}
+              className={`${goal.backgroundColor} flex flex-col p-6 py-8 sm:p-8 rounded-lg shadow-lg`}
             >
               <div className="grid w-16 h-16 mb-4 rounded-lg shadow-lg ring-gray-50/30 ring-1 bg-white/20 place-items-center ">
                 {goal.icon}
