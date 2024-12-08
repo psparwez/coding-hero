@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply bg-gray-600;
+  }
+  body::-webkit-scrollbar-thumb:active {
+    @apply bg-gray-500;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-gray-900 font-Urbanist;
+  }
+  .nav-btn {
+    @apply px-5 py-2 text-base font-semibold text-center transition duration-300 bg-gray-800 rounded-md shadow-lg text-white/70 ring-1 ring-gray-800 hover:ring-gray-700 font-Urbanist;
+  }
+  .nav-btn.primary {
+    @apply text-white shadow-xl bg-primaryColor shadow-primaryColor/10 hover:bg-primaryColor/90 ring-primaryColor;
+  }
+}
+
+.conicGradient {
+  @apply relative z-10 inline-block px-5 py-2 mb-3 overflow-hidden text-base text-white bg-gray-900 rounded-full;
+}
+.conicGradient::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: conic-gradient(transparent 270deg, #f0effe36, transparent);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+
+  animation: rotate-gradient 3s cubic-bezier(0.22, 1, 1, 1) infinite;
+}
+@keyframes rotate-gradient {
+  0% {
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+.conicGradient::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  @apply bg-gray-900;
+}
+.conicGradient > span {
+  text-shadow: 0 0 11px #959494;
+}
+
+.bottomImage {
+  background-image: linear-gradient(to right, #111827, transparent);
+}
