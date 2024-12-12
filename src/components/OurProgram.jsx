@@ -7,6 +7,7 @@ import SectionText from "../components/SectionText";
 import { BiGroup } from "react-icons/bi";
 import { LuSofa, LuTicket } from "react-icons/lu";
 import { AiOutlineLike } from "react-icons/ai";
+
 const ourProgramData = [
   {
     id: 1,
@@ -91,10 +92,12 @@ const OurProgram = () => {
           <h2 className="mb-4 text-2xl font-bold text-transparent sm:text-3xl md:text-4xl bg-gradient-to-r via-white bg-clip-text from-white to-gray-800 font-Sync">
             Ready to become a Coding Hero?
           </h2>
+          
           <p className="w-full text-sm sm:text-base sm:w-[80%] mx-auto text-gray-400">
             Join thousands of students from across India and start your coding
             journey today!
           </p>
+          
           <motion.button
             whileHover={{ scale: 1.05, backgroundColor: "#c85d00" }}
             whileTap={{ scale: 0.95 }}

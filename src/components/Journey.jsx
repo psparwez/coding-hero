@@ -80,6 +80,7 @@ const stepsData = [
 
 const Journey = () => {
   let stepNum = 1;
+  
   return (
     <section id="" className="py-20 pt-10">
       <motion.div
