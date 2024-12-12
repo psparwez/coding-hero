@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 const SectionText = ({ title, primaryText, description }) => {
   return (
     <div className="text-center max-w-[650px] mx-auto">

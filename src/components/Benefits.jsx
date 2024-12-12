@@ -90,7 +90,7 @@ const Benefits = () => {
               initial="hidden"
               whileHover="hover"
               whileTap={{ scale: 0.98 }}
-              className="p-8 shadow-xl bg-gradient-to-bl rounded-xl from-gray-900 ring-1 ring-gray-800/70 to-gray-950/10 backdrop-blur-2xl "
+              className="p-8 shadow-xl border-[1px] border-transparent hover:border-orange-400 bg-gradient-to-bl rounded-xl from-gray-900 ring-1 ring-gray-800/70 to-gray-950/10 backdrop-blur-2xl "
               key={benefit.id}
             >
               <div>
@@ -115,7 +115,7 @@ const Benefits = () => {
             backgroundPosition: "right center",
             transition: { duration: 0.3 },
           }}
-          className="flex items-center gap-1 px-6 py-2 sm:py-2.5 font-medium mx-auto text-lg text-center text-white rounded-full min-w-max mt-14 bg-gradient-to-r from-orange-500 to-pink-500 bg-[length:200%_100%] hover:from-orange-600 hover:to-pink-600 transition-all duration-500"
+          className="flex items-center gap-1 px-6 py-2 sm:py-2.5 font-medium mx-auto text-lg text-center text-white rounded-full min-w-max mt-14 shadow-md bg-gradient-to-r from-orange-500 to-pink-500 bg-[length:200%_100%] hover:from-orange-600 hover:to-pink-600 transition-all duration-500"
         >
           Join Now
           <MdOutlineChevronRight size={24} />

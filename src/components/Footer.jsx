@@ -16,6 +16,7 @@ const Footer = () => {
       link: "/contact-us",
     },
   ];
+
   return (
     <footer className="px-10 border-t border-gray-800">
       <div className="container py-10 pb-4 mx-auto ">

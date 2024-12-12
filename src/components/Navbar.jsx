@@ -20,6 +20,7 @@ const navLinks = [
     label: "Docs",
   },
 ];
+
 import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {

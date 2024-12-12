@@ -86,7 +86,7 @@ const Features = () => {
               whileHover="hover"
               whileTap={{ scale: 0.95 }}
               key={benefit.id}
-              className={` ring-gray-600/30  p-6 sm:p-10 rounded-xl gap-3 bg-gradient-to-tr from-[#1b2034]/10 to-[#1b2034] shadow-xl ring-1 `}
+              className={`ring-gray-600/30 p-6 sm:p-10 rounded-xl gap-3 border-[1px] border-transparent hover:border-orange-400 bg-gradient-to-tr from-[#1b2034]/10 to-[#1b2034] shadow-xl ring-1 `}
             >
               <div
                 className={`${benefit.backgroundColor} h-14  justify-center aspect-square rounded flex items-center mb-4`}
