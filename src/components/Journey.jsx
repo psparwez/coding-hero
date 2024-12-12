@@ -108,7 +108,7 @@ const Journey = () => {
                 initial="hidden"
                 whileHover="hover"
                 whileTap={{ scale: 0.98 }}
-                className="relative flex flex-wrap items-start gap-5 p-6 mb-4 bg-gray-800 rounded-lg sm:flex-nowrap"
+                className="relative flex flex-wrap items-start gap-5 p-6 mb-4 bg-gray-800 border-[1px] border-transparent hover:border-orange-400 rounded-lg sm:flex-nowrap"
                 key={step.id}
               >
                 <div
@@ -140,7 +140,7 @@ const Journey = () => {
                 initial="hidden"
                 whileHover="hover"
                 whileTap={{ scale: 0.98 }}
-                className="relative flex flex-wrap items-start gap-5 p-6 mb-4 bg-gray-800 rounded-lg sm:flex-nowrap"
+                className="relative flex flex-wrap items-start gap-5 p-6 mb-4 bg-gray-800 border-[1px] border-transparent hover:border-orange-400 rounded-lg sm:flex-nowrap"
                 key={step.id}
               >
                 <div
