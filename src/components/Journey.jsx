@@ -3,14 +3,14 @@ import SectionVariants, { CardHoverVariants } from "../animations/varients.js";
 
 // icons
 import {
-  LuCheckCircle,
-  LuCalendar,
-  LuVideo,
-  LuUsers,
-  LuStar,
-  LuTrophy,
-  LuArrowUpRight,
-} from "react-icons/lu";
+  FaCheckCircle,
+  FaCalendarAlt,
+  FaVideo,
+  FaUsers,
+  FaStar,
+  FaTrophy,
+  FaArrowAltCircleRight,
+} from "react-icons/fa";
 import CtaButton from "./CtaButton";
 
 const stepsData = [
@@ -19,7 +19,7 @@ const stepsData = [
     title: "Anyone Can Apply",
     description:
       "Open to all college students in India, regardless of your coding experience.",
-    icon: <LuCheckCircle />,
+    icon: <FaCheckCircle />,
     backgroundColor: "bg-gradient-to-r from-purple-600 to-purple-500",
     stepBgColor: "bg-purple-500",
   },
@@ -28,7 +28,7 @@ const stepsData = [
     title: "Wait for Open Intake",
     description:
       "Keep an eye out for our application periods throughout the year.",
-    icon: <LuCalendar />,
+    icon: <FaCalendarAlt />,
     backgroundColor: "bg-gradient-to-r from-blue-600 to-blue-500",
     stepBgColor: "bg-blue-500",
   },
@@ -37,7 +37,7 @@ const stepsData = [
     title: "Submit Your Application",
     description:
       "Create a video showcasing why you're the best fit and how you'll contribute to the community.",
-    icon: <LuVideo />,
+    icon: <FaVideo />,
     backgroundColor: "bg-gradient-to-r from-green-600 to-green-500",
     stepBgColor: "bg-green-500",
   },
@@ -46,7 +46,7 @@ const stepsData = [
     title: "Create and Host Events",
     description:
       "Once accepted, start organizing coding events and invite luusers to participate.",
-    icon: <LuUsers />,
+    icon: <FaUsers />,
     backgroundColor: "bg-gradient-to-r from-yellow-600 to-yellow-500",
     stepBgColor: "bg-yellow-500",
   },
@@ -55,7 +55,7 @@ const stepsData = [
     title: "Voting System",
     description:
       "Users can attend events and vote for their favorite each month.",
-    icon: <LuStar />,
+    icon: <FaStar />,
     backgroundColor: "bg-gradient-to-r from-pink-600 to-pink-500",
     stepBgColor: "bg-pink-500",
   },
@@ -63,7 +63,7 @@ const stepsData = [
     id: 6,
     title: "Win Monthly Prizes",
     description: "The highest-voted event host wins the pool prize each month.",
-    icon: <LuTrophy />,
+    icon: <FaTrophy />,
     backgroundColor: "bg-gradient-to-r from-red-600 to-red-500",
     stepBgColor: "bg-red-500",
   },
@@ -72,7 +72,7 @@ const stepsData = [
     title: "Fresh LuStart Every Month",
     description:
       "The competition resets monthly, giving everyone a chance to shine.",
-    icon: <LuArrowUpRight />,
+    icon: <FaArrowAltCircleRight />,
     backgroundColor: "bg-gradient-to-r from-indigo-600 to-indigo-500",
     stepBgColor: "bg-indigo-500",
   },
