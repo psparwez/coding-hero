@@ -59,7 +59,7 @@ const OurProgram = () => {
               initial="hidden"
               whileHover="hover"
               whileTap={{ scale: 0.98 }}
-              className="shadow-xl rounded-xl ring-1 ring-gray-700/70 p-7 bg-gradient-to-tr from-gray-800 to-gray-900"
+              className="shadow-xl rounded-xl border-[1px] border-transparent hover:border-orange-400 ring-1 ring-gray-700/70 p-7 bg-gradient-to-tr from-gray-800 to-gray-900"
               key={item.id}
             >
               <div className="flex items-start justify-between gap-2">
