@@ -3,7 +3,7 @@
     <p> Shape India's Tech Future. A modern, smooth, and <br> responsive landing page built with  <b>React</b>, <b>Tailwind CSS</b>, and <br> <b>Lenis</b> for seamless scrolling experiences.</p>
     <br/>
 
-[![Live Demo](https://img.shields.io/badge/-Live%20Demo-162648?style=for-the-badge&logo=vercel&logoColor=white)](https://github.com/psparwez/coding-hero)
+[![Live Demo](https://img.shields.io/badge/-Live%20Demo-162648?style=for-the-badge&logo=vercel&logoColor=white)](https://coding-hero-one.vercel.app/)
 
 </div>
 
@@ -74,7 +74,7 @@ The landing page highlights:
 ## 🚀 Getting Started
 Follow these steps to set up the project locally:
 
-## ⚙️ **Prerequisites**  
+### ⚙️ Prerequisites
 
 Before you start, ensure you have the following tools installed:
 
